@@ -11,7 +11,6 @@ ArJdbc::ConnectionMethods.module_eval do
     end
 
     throw "Please specify Splice Cluster URL by defining 'server_url:' in database.yml" if config[:server_url].blank?
-
     config[:url] ||= "jdbc:splice://#{config[:server_url]}/#{config[:database]};create=true"
     config[:driver] ||= defined?(::Jdbc::Splice.driver_name) ?
       ::Jdbc::Splice.driver_name : 'com.splicemachine.db.jdbc.ClientDriver'
