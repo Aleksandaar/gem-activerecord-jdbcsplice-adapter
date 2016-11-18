@@ -18,5 +18,5 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency 'activerecord-jdbc-adapter', "~> 1.3.21"
-  spec.add_dependency 'jdbc-splice', '~> 0.1'
+  spec.add_dependency 'jdbc-splice', '~> 0.1.1'
 end
